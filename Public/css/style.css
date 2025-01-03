@@ -1,0 +1,117 @@
+/* Card styles */
+.card {
+  width: 50%;
+  max-width: 250px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 45px 0 rgba(31, 38, 135, 0.5);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 30px 30px 0 0;
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+.card-body {
+  padding: 20px;
+  color: white;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .card-body {
+  opacity: 1;
+}
+
+/* Navbar styles */
+.navbar {
+  background: linear-gradient(
+      45deg,
+      rgba(20, 30, 48, 0.95),
+      rgba(36, 59, 85, 0.95)
+  );
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  padding: 1rem;
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  border-radius: 20px;
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.navbar a:hover {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.button1 {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(45deg, #052a70, #243b55);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+
+
+body {
+  background: linear-gradient(
+      135deg,
+      #141e30,
+      #243b55,
+      #1a2a43
+  );
+  min-height: 100vh;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: gradientAnimation 15s ease infinite;
+  background-size: 400% 400%;
+}
+
+@keyframes gradientAnimation {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
